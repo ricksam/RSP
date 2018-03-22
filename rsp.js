@@ -21,6 +21,14 @@ Rsp.prototype.post = function (source, url, target) {
     this.exec(source, "POST", url, target);
 }
 
+Rsp.prototype.put = function (source, url, target) {
+    this.exec(source, "PUT", url, target);
+}
+
+Rsp.prototype.delete = function (source, url, target) {
+    this.exec(source, "DELETE", url, target);
+}
+
 Rsp.prototype.exec = function (source, method, url, target) {
 
     this._url = url;
