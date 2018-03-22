@@ -17,10 +17,10 @@ Como Usar:
     rsp.post("#div_dados", "/Controller/Action", "#div_result"); 
 
     // Usando Json
-    rsp.post({ id = 1 }, "/Controller/Action", "#div_result"); 
+    rsp.post({ id : 1 }, "/Controller/Action", "#div_result"); 
 
     // Retornando em uma function
-    rsp.post({ id = 1 }, "/Controller/Action", function(result){
+    rsp.post({ id : 1 }, "/Controller/Action", function(result){
         $("#div_result").html(result);
     });
 
